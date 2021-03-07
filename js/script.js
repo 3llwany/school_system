@@ -1,17 +1,17 @@
-(function($) { 
+(function ($) {
 
 
 
-$('[data-toggle="offcanvas"]').on('click', function () {
-    $('.navbar-collapse').toggleClass('show');
+    $('[data-toggle="offcanvas"]').on('click', function () {
+        $('.navbar-collapse').toggleClass('show');
     });
 
 
-    
-/* ================ Revolution Slider. ================ */
-    if($('.tp-banner').length > 0){
+
+    /* ================ Revolution Slider. ================ */
+    if ($('.tp-banner').length > 0) {
         $('.tp-banner').show().revolution({
-            delay:6000,
+            delay: 6000,
             startheight: 700,
             startwidth: 1170,
             hideThumbs: 1000,
@@ -24,9 +24,9 @@ $('[data-toggle="offcanvas"]').on('click', function () {
             fullWidth: 'on'
         });
     }
-    if($('.tp-banner-full').length > 0){
+    if ($('.tp-banner-full').length > 0) {
         $('.tp-banner-full').show().revolution({
-            delay:6000,
+            delay: 6000,
             hideThumbs: 1000,
             navigationType: 'none',
             touchenabled: 'on',
@@ -36,14 +36,14 @@ $('[data-toggle="offcanvas"]').on('click', function () {
             dottedOverlay: 'none',
             fullScreen: 'on'
         });
-    }   
+    }
 
 
 
 
 
-/* ================ testimonials ================ */
-    $(document).ready(function() {
+    /* ================ testimonials ================ */
+    $(document).ready(function () {
         $(".testimonials_list").owlCarousel({
             loop: true,
             rewind: true,
@@ -72,8 +72,8 @@ $('[data-toggle="offcanvas"]').on('click', function () {
     });
 
 
-/* ================ testimonials ================ */
-    $(document).ready(function() {
+    /* ================ testimonials ================ */
+    $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 30,
@@ -101,8 +101,8 @@ $('[data-toggle="offcanvas"]').on('click', function () {
         });
     });
 
-/* ================   home_teachers ================ */
-    $(document).ready(function() {
+    /* ================   home_teachers ================ */
+    $(document).ready(function () {
         $(".home_teachers").owlCarousel({
             loop: true,
             rtl: true,
@@ -132,16 +132,16 @@ $('[data-toggle="offcanvas"]').on('click', function () {
     });
 
 
-/*==== Nav ====*/
-    $('.navbar-collapse a').on('click',function(){
+    /*==== Nav ====*/
+    $('.navbar-collapse a').on('click', function () {
         $(".navbar-collapse").collapse('hide');
     });
 
 
 
 
-/* ================ Nav ================ */
-    $('.fa-caret-down').on("click", function(e) {
+    /* ================ Nav ================ */
+    $('.fa-caret-down').on("click", function (e) {
         e.preventDefault();
         $(this).next().slideToggle('');
     });
@@ -156,32 +156,17 @@ $('.nav-item').click(function () {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    /*
-    sessionStorage.setItem('lang', 'en');
-    if(sessionStorage.getItem('lang') == 'ar'){
-        $("link[href*='bootstrap.min.css']").attr("href", "css/bootstrap-rtl.css");
-        $("link[href*='style.css']").attr("href", "css/style-rtl.css");
-    }
 
-    if (sessionStorage.getItem('lang') == 'en'){
-        $("link[href*='bootstrap-rtl.css']").attr("href", "css/bootstrap.min.css");
-        $("link[href*='style-rtl.css']").attr("href", "css/style.css");
-    }
-
-    $('.EnLang').click(function(){
-        sessionStorage.setItem('lang', 'en');
-       // location.reload();
+    $('.EnLang').click(function () {
         $("link[href*='bootstrap-rtl.css']").attr("href", "css/bootstrap.min.css");
         $("link[href*='style-rtl.css']").attr("href", "css/style.css");
     });
-    $('.ArLang').click(function(){
-        sessionStorage.setItem('lang', 'ar');
-        //location.reload();
+    $('.ArLang').click(function () {
         $("link[href*='bootstrap.min.css']").attr("href", "css/bootstrap-rtl.css");
         $("link[href*='style.css']").attr("href", "css/style-rtl.css");
     });
-    */
+
 
 });

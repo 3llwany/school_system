@@ -174,21 +174,6 @@ ul.tick li {
 	   == Header Css Start ==
 ********************************************/
 
-.langImg {
-  width: 16px;
-  height: 16px;
-}
-
-.country-lang>a {
-  cursor: pointer;
-  display: block;
-  transition: all .2s ease-in-out;
-}
-
-.country-lang>a:hover {
-  color: #ffb607
-}
-
 .navholder {
   height: 89px;
   background: #FFF
@@ -218,15 +203,31 @@ ul.tick li {
 }
 
 .header_info div {
-  /* border-right: 1px solid #e8e8e8;
-  padding-right: 26px; */
+  /* border-right: 1px solid #e8e8e8; */
   margin-right: 8px;
+  display: -webkit-inline-box;
 }
 
 .header_info div:last-child {
   border: none;
   margin-right: 0;
   padding-right: 0;
+}
+
+.langImg {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.country-lang>a {
+  cursor: pointer;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.country-lang>a:hover {
+  color: #ffb607
 }
 
 .header_info .search a {
@@ -943,7 +944,7 @@ a.slidebtn i {
   Categories_wrap Css              
 -----------------------------------------*/
 .categories_wrap {
-  z-index: 1000;
+  z-index: 999;
   margin-top: -70px;
   position: relative;
 }
@@ -1143,7 +1144,7 @@ a.slidebtn i {
         Class Css
 ********************************/
 .class-wrap {
-  background: url(../images/class-bg.jpg) no-repeat top;
+  background: url(../images/class-bg_.jpg) no-repeat top;
   background-size: cover;
   padding: 70px 0;
 }
@@ -1311,7 +1312,7 @@ a.slidebtn i {
 .choice-wrap {
   padding: 60px 0 70px 0;
   text-align: center;
-  background: url(../images/choice-bg.jpg) no-repeat top;
+  background: url(../images/choice-bg_.jpg) no-repeat top;
   background-size: cover;
 }
 
@@ -1365,7 +1366,7 @@ a.slidebtn i {
 }
 
 .video {
-  background: url(../images/large_img.jpg) no-repeat top;
+  background: url(../images/video_.jpg) no-repeat top;
   background-size: cover;
   padding: 200px 0;
   border: 14px solid #fff;
@@ -1530,7 +1531,7 @@ a.slidebtn i {
 -----------------------------------------*/
 .gallery-wrap {
   position: relative;
-  background: url(../images/gallery-bg.jpg) no-repeat top;
+  background: url(../images/gallery-bg_.jpg) no-repeat top;
   background-size: cover;
   padding: 60px 0;
 }
@@ -2288,7 +2289,7 @@ button:focus {
         Enroll css
 *********************************************/
 .enroll-wrap {
-  background: url(../images/enroll-bg.jpg) !important;
+  background: url(../images/enroll-bg_.jpg) !important;
   padding: 100px 0;
 }
 
@@ -2441,7 +2442,10 @@ button:focus {
   font-size: 30px;
 }
 
+.teacherImg>img {
+  width: 100% !important;
 
+}
 
 
 /*********************************************
@@ -5174,6 +5178,27 @@ textarea.form-control {
 }
 
 @media screen and (max-width:767px) {
+  .navholder {
+    height: 0px;
+  }
+
+  .header_info {
+    display: block;
+    text-align: right;
+  }
+
+  .header_info>div {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none
+  }
+
+  .country-lang>a {
+    font-size: 20px;
+    color: #FFF;
+  }
+
   .videoslider h1 {
     font-size: 34px;
   }
@@ -5432,6 +5457,28 @@ textarea.form-control {
 }
 
 @media screen and (max-width:480px) {
+  .navholder {
+    height: 0px;
+  }
+
+  .header_info {
+    display: block;
+    text-align: left;
+  }
+
+  .header_info>div {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none
+  }
+
+
+  .country-lang>a {
+    font-size: 20px;
+    color: #FFF;
+  }
+
   .videoslider h1 {
     font-size: 24px;
   }
